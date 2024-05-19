@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import headerImg from '../assets/img/lap.png';
+import headerImg from '../assets/img/intern.JPG';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -52,11 +52,17 @@ export const Banner = () => {
                             <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                             <span className="tagline">Welcome to my Portfolio</span>
                             <br></br>
-                            <h1>Hi I'm Riteshwar</h1>
+                            <h1>Riteshwar Singh Brar</h1>
                             <h2>Full-Stack Developer</h2>
                             <p>
-                            “when you don't create things, you become defined by your tastes rather than ability. your tastes only narrow & exclude people. so create.”
-                                ― Why The Lucky Stiff
+                            I like to create solutions to ongoing problems with my innovation and technical accumen.
+                            I am good at problem solving as I like to break each one down to smaller bits which helps me find a solution that seems out of the box initially.</p>
+                            
+                            <p> Here is a quote that resonates with me:</p>
+                            <p>
+                            “When you don't create things, you become defined by your tastes rather than ability. Your tastes only narrow & exclude people. so create.”
+                            </p>
+                            <p className="credit">-Why The Lucky Stiff
                             </p>
                             
                             </div>}
