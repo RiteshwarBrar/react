@@ -311,23 +311,34 @@ border-right: 0.08em solid #666;
 .skill {
   padding: 0 0 50px 0;
   position: relative;
-  background:  #ffffff
+  background:  linear-gradient(to bottom,#ffffff, #ecffec 100%);
 }
 
 .skill-bx {
   background: #3a3a3a;
+  align-self: center;
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
+  padding: 50px 50px;
   margin-top: 50px;
 }
 
 .skill h2 {
   color:#ffffff;
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 300;
+  border-radius: 35px;
+  
+  letter-spacing: 0.8px;
+  padding: 20px 30px;
+  background: #3c9442;
+  margin-bottom: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 .skill h5 {
+  
   font-size: 15px;
   font-weight: 300;
 }
@@ -341,13 +352,35 @@ border-right: 0.08em solid #666;
 }
 
 .skill-slider {
-  width: 85%;
+  width: 95%;
   margin: 0 auto;
-  position: relative;
+  position: center;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
 }
 
 .skill-slider .item img {
-  width: 50%;
+  
+  width: 40%;
   margin: 0 auto 15px auto;
 }
 
@@ -357,85 +390,55 @@ border-right: 0.08em solid #666;
 .project {
   padding: 80px 0;
   position: relative;
-  background: linear-gradient(to bottom,#ffffff, #919e91 200%);
+  background: #ecffec;
+}
+.project h1 {
+  width: 90%;
+  color: #ffffff;
+  font-weight: 300;
+  letter-spacing: 0.8px;
+  padding: 20px 30px;
+  background: #3c9442;
+  font-size: 35px;
+  margin-bottom: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 .project h2 {
-  color: #6fe06f;
-	font-size: 40px;
+  color: #3c9442;
+	font-size: 30px;
+	font-weight: 300;
+  text-align: center;
+}
+.project h4 {
+  color: #3c9442;
+	font-size: 20px;
 	font-weight: 300;
   text-align: center;
 }
 .project span {
-  color: #6fe06f;
+  color: #3c9442;
 	font-size: 20px;
 	font-weight: 300;
   text-align: center;
 }
 .project h6 {
+  color: #5c5c5c;
 	font-size: 20px;
 	font-weight: 300;
   text-align: center;
 }
 .project p {
-  color: #B8B8B8;
+  color: #5c5c5c;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  margin: 14px auto 30px auto;
-  text-align: left;
+  margin: auto auto 15px auto;
+  text-align: center;
   width: 85%;
 }
-.project .nav.nav-pills {
-  width: 72%;
-  margin: 0 auto;
-  border-radius: 50px;
-  background-color: #2a2a2a;
-  overflow: hidden;
-}
-.project .nav.nav-pills .nav-item {
-  width: 33.33333%;
-}
-.project .nav.nav-pills .nav-link {
-  background-color: transparent;
-  border-radius: 0;
-  padding: 17px 0;
-  color: #6fe06f;
-  width: 100%;
-  font-size: 15px;
-  letter-spacing: 0.8px;
-  font-weight: 300;
-  position: relative;
-  transition: 0.3s ease-in-out;
-  text-align: center;
-  z-index: 0;
-}
-.project .nav.nav-pills .nav-link::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 100%;
-    background: #305230;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: 0.3s ease-in-out;
-}
-.project .nav.nav-pills .nav-link.active::before {
-    width: 100% !important;
-}
-.project .nav.nav-pills .nav-link.active {
-    border: 1px solid #000000;
-}
-.nav-link#projects-tabs-tab-first {
-  border-right: 1.5px solid rgb(171, 171, 171);
-}
-.nav-link#projects-tabs-tab-second {
-  border-top: 1px solid #2a2a2a;
-  border-bottom: 1px solid #2a2a2a;
-}
-.nav-link#projects-tabs-tab-third {
-  border-left: 1.5px solid rgb(171, 171, 171);
-}
+
 .proj-imgbx {
   position: relative;
   border-radius: 30px;
@@ -503,14 +506,14 @@ border-right: 0.08em solid #666;
   /* margin-top: 15px; */
   font-weight: 400;
   font-size: 16px;
-  color: #cfe1cf;
+  color: #ffffff;
   letter-spacing: 0.5px;
   text-align: right;
 }
 .footer button {
   font-weight: 300;
-  color: #cfe1cf;
-  border: 1px solid #cfe1cf;
+  color: #ffffff;
+  border: 1px solid #ffffff;
   padding: 8px 12px;
   font-size: 18px;
   margin-top: 15px;

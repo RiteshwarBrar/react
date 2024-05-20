@@ -20,12 +20,12 @@ export const Projects = () => {
             title: "Portfolio Website",
             description: "HTML/CSS & React.js",
             imgUrl: web2,
-        },
-        {
-            title: "Portfolio Website",
-            description: "HTML/CSS & React.js",
-            imgUrl: web3,
-        },
+        }
+        // {
+        //     title: "Portfolio Website",
+        //     description: "HTML/CSS & React.js",
+        //     imgUrl: web3,
+        // },
        
     ];
     const project2 = [
@@ -38,12 +38,12 @@ export const Projects = () => {
             title: "Facial recognition",
             description: "Python & OpenCV",
             imgUrl: projImg2,
-        },
-        {
-            title: "Facial recognition",
-            description: "Python & OpenCV",
-            imgUrl: projImg2,
-        },
+        }
+        // {
+        //     title: "Facial recognition",
+        //     description: "Python & OpenCV",
+        //     imgUrl: projImg2,
+        // },
        
     ];
     const project3 = [
@@ -56,12 +56,12 @@ export const Projects = () => {
             title: "Balance Sheet",
             description: "Flutter",
             imgUrl: projImg3,
-        },
-        {
-            title: "Balance Sheet",
-            description: "Flutter",
-            imgUrl: projImg3,
-        },
+        }
+        // {
+        //     title: "Balance Sheet",
+        //     description: "Flutter",
+        //     imgUrl: projImg3,
+        // },
        
     ];
 
@@ -73,9 +73,46 @@ export const Projects = () => {
                     <TrackVisibility>
                         {({ isVisible}) =>    
                             <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                        <h2>Projects</h2>
+                        <h1>Projects</h1>
                         </div>}
                     </TrackVisibility>
+                                    <br></br>
+                                    <br></br>
+                                    <h2>Pill Pal</h2>
+                                    <h6><span>Uses: </span>HTML, CSS, JavaScript, Twilio, MongoDB and Node.js</h6>
+                                    <br></br>
+                                    <p>Pill Pal was a project made by me and three other students during MadHacks 2023.<br></br>
+                                        The inspiration for this app arose from the ongoing issue of people forgetting to take their medication due to age or other medical issues.
+                                        Pill Pal is a web application that allows users to set reminders for their medication and helps them to keep track of their medication intake.
+                                        The app can also send real-time text messages to the user's phone as a reminder for them to take their medication. 
+                                    </p>
+                                    
+                                    <Row>
+                                        <Col></Col>
+                                        <Col><h4>github</h4></Col>
+                                        <Col><h4>devpost </h4></Col>
+                                        <Col></Col>
+                                    </Row>
+                                    <br></br>
+                                    
+                                    
+                                    {/* https://devpost.com/software/pill-pal-2svc61
+                                     https://github.com/aprkr/Madhacks2023 */}
+                                    
+                                    
+                                    
+                                    <Row>
+                                        {
+                                            project1.map((project, index) => {
+                                                return (
+                                                    <ProjectCard
+                                                    key={index}
+                                                    {...project}
+                                                    />
+                                                )
+                                            })
+                                        }
+                                    </Row>
                         
                                     <br></br>
                                     <br></br>
