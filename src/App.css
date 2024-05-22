@@ -326,7 +326,7 @@ border-right: 0.08em solid #666;
 
 .skill h2 {
   color:#ffffff;
-  font-size: 35px;
+  font-size: auto;
   font-weight: 300;
   border-radius: 35px;
   
