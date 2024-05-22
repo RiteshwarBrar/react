@@ -506,7 +506,7 @@ border-right: 0.08em solid #666;
 .footer p {
   /* margin-top: 15px; */
   font-weight: 400;
-  font-size: 16px;
+  font-size: auto;
   color: #ffffff;
   letter-spacing: 0.5px;
   text-align: right;
