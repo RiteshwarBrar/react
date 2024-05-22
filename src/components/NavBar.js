@@ -1,7 +1,7 @@
 // Desc: This file contains the code for the navigation bar of the website.
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import logo from '../assets/img/lap.png';
+//import logo from '../assets/img/lap.png';
 import resume from '../assets/pdf/resume.pdf';
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -27,9 +27,9 @@ export const NavBar = () => {
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled":""}>
       <Container>
-        <Navbar.Brand href="https://github.com/RiteshwarBrar" target="_blank" rel="noreferrer">
+      {/* <Navbar.Brand href="https://github.com/RiteshwarBrar" target="_blank" rel="noreferrer">
           <img src={logo} alt="Logo"/>
-        </Navbar.Brand>
+        </Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
