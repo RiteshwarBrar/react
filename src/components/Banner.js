@@ -1,47 +1,13 @@
-import { useState, useEffect } from "react";
+// Desc: Home page banner component
 import { Col, Container, Row } from "react-bootstrap";
 import headerImg from '../assets/img/intern.JPG';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
-    const [loopNum, setLoopNum] = useState(0);
-    const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = [ "Web Developer.", "App Developer.", "Software Engineer."];
-    const [text, setText] = useState('');
-    const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const period = 2000;
+    
 
-    useEffect(() => {
-        let ticker = setInterval(() => {
-            tick();
-        }, delta);
 
-        return () => { clearInterval(ticker)};
-    }, [text, delta])
-
-    const tick = () => {
-        let i = loopNum % toRotate.length;
-        let fullText = toRotate[i];
-        let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
-
-        setText(updatedText);
-        
-        if (isDeleting) {
-            setDelta(prevDelta => prevDelta/2)
-        }
-
-        if (!isDeleting && updatedText === fullText) {
-            setIsDeleting(true);
-            setDelta(period);
-        }
-        
-        else if(isDeleting && updatedText === '') {
-            setIsDeleting(false);
-            setLoopNum(loopNum + 1);
-            setDelta(500);
-        }
-    }
     return(
         <section className="banner" id="home">
             <Container>

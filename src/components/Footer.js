@@ -1,3 +1,4 @@
+// Desc: Footer component for the website
 import { Container, Col, Row } from "react-bootstrap";
 
 

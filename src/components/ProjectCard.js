@@ -1,3 +1,4 @@
+// Desc: ProjectCard component for project images
 import { Col } from "react-bootstrap";
 export const ProjectCard = ({title, description, imgUrl }) => {
     return (

@@ -1,9 +1,9 @@
-import { Container, Nav, Tab, Row, Col } from "react-bootstrap";
+// Desc: This file contains the Projects component which is responsible for rendering the projects section of the portfolio.
+import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import shell1 from "../assets/img/shell1.png";
 import shell2 from "../assets/img/shell2.png";
 import load from "../assets/img/load.svg";
-import projImg2 from "../assets/img/dead.png";
 import bud1 from "../assets/img/bud1.png";
 import det1 from "../assets/img/det1.png";
 import det2 from "../assets/img/det2.png";

@@ -1,3 +1,4 @@
+// Desc: This file contains the code for the navigation bar of the website.
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from '../assets/img/lap.png';
