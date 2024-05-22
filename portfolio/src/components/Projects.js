@@ -1,10 +1,17 @@
 import { Container, Nav, Tab, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import web1 from "../assets/img/web1.png";
-import web2 from "../assets/img/web2.png";
-import web3 from "../assets/img/web3.png";
+import shell1 from "../assets/img/shell1.png";
+import shell2 from "../assets/img/shell2.png";
+import load from "../assets/img/load.svg";
 import projImg2 from "../assets/img/dead.png";
-import projImg3 from "../assets/img/dead.png";
+import bud1 from "../assets/img/bud1.png";
+import det1 from "../assets/img/det1.png";
+import det2 from "../assets/img/det2.png";
+import bud2 from "../assets/img/bud2.png";
+import chat1 from "../assets/img/chat1.png";
+import chat2 from "../assets/img/chat2.png";
+import pill1 from "../assets/img/pill1.png";
+import pill2 from "../assets/img/twill.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -12,59 +19,82 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
     const project1 = [
         {
-            title: "Portfolio Website",
-            description: "HTML/CSS & React.js",
-            imgUrl: web1,
+            title: "Work in progress",
+            description: "",
+            imgUrl: load
         },
         {
-            title: "Portfolio Website",
-            description: "HTML/CSS & React.js",
-            imgUrl: web2,
+            title: "Work in progress",
+            description: "",
+            imgUrl: load
         }
-        // {
-        //     title: "Portfolio Website",
-        //     description: "HTML/CSS & React.js",
-        //     imgUrl: web3,
-        // },
        
     ];
     const project2 = [
         {
             title: "Facial recognition",
             description: "Python & OpenCV",
-            imgUrl: projImg2,
+            imgUrl: det1,
         },
         {
             title: "Facial recognition",
             description: "Python & OpenCV",
-            imgUrl: projImg2,
+            imgUrl: det2,
         }
-        // {
-        //     title: "Facial recognition",
-        //     description: "Python & OpenCV",
-        //     imgUrl: projImg2,
-        // },
        
     ];
     const project3 = [
         {
-            title: "Balance Sheet",
-            description: "Flutter",
-            imgUrl: projImg3,
+            title: "Custom Shell",
+            description: "C in Linux",
+            imgUrl: shell1,
         },
         {
-            title: "Balance Sheet",
-            description: "Flutter",
-            imgUrl: projImg3,
+            title: "Custom Shell",
+            description: "C in Linux",
+            imgUrl: shell2,
         }
-        // {
-        //     title: "Balance Sheet",
-        //     description: "Flutter",
-        //     imgUrl: projImg3,
-        // },
        
     ];
-
+    const project4 = [
+        {
+            title: "Pill Pal",
+            description: "JavaScript, Twilio, MongoDB and Node.js",
+            imgUrl: pill1
+        },
+        {
+            title: "Pill Pal",
+            description: "JavaScript, Twilio, MongoDB and Node.js",
+            imgUrl: pill2
+        }
+       
+    ];
+    const project5 = [
+        {
+            title: "Badger Chatroom",
+            description: "Javascript with React Native",
+            imgUrl: chat1
+        },
+        {
+            title: "Badger Chatroom",
+            description: "Javascript with React Native",
+            imgUrl: chat2
+        }
+       
+    ];
+    const project6 = [
+        {
+            title: "Badger Buddies",
+            description: "Javascript with React.js",
+            imgUrl: bud1
+        },
+        {
+            title: "Badger Buddies",
+            description: "Javascript with React.js",
+            imgUrl: bud2
+        }
+       
+    ];
     return (
         <section className="project" id="projects">
             <Container>
@@ -89,8 +119,10 @@ export const Projects = () => {
                                     
                                     <Row>
                                         <Col></Col>
-                                        <Col><h4>github</h4></Col>
-                                        <Col><h4>devpost </h4></Col>
+                                        <Col><h4><a href="https://github.com/aprkr/Madhacks2023"  target="_blank" rel="noreferrer" style={{ textDecoration:"none", color: "#3c9442", padding: "6px 12px",
+  border: "2px solid #3c9442", "background-color": "#dfffdf"}}>GitHub</a></h4></Col>
+                                        <Col><h4><a href="https://devpost.com/software/pill-pal-2svc61"  target="_blank" rel="noreferrer" style={{ textDecoration:"none", color: "#3c9442", padding: "6px 12px",
+  border: "2px solid #3c9442", "background-color": "#dfffdf"}}>Devpost</a></h4></Col>
                                         <Col></Col>
                                     </Row>
                                     <br></br>
@@ -103,7 +135,7 @@ export const Projects = () => {
                                     
                                     <Row>
                                         {
-                                            project1.map((project, index) => {
+                                            project4.map((project, index) => {
                                                 return (
                                                     <ProjectCard
                                                     key={index}
@@ -113,36 +145,22 @@ export const Projects = () => {
                                             })
                                         }
                                     </Row>
-                        
-                                    <br></br>
-                                    <br></br>
-                                    <h2>Personal Porfolio Website</h2>
-                                    <h6><span>Uses: </span>HTML, CSS, React.js and JavaScript</h6>
-                                    <br></br>
-                                    <p>This is the website for my personal portfolio as a Computer Science major in his Juinor year. It basically shows what languages I know and some of the projects that I have made recently.</p>
-                                    <p>Moreover, users can navigate through diffrent sections of the website or can visit my LinkedIn page as well as my GitHub profile just by the click of a button. Feel free to explore and experiment with the website.</p>
-                                    <Row>
-                                        {
-                                            project1.map((project, index) => {
-                                                return (
-                                                    <ProjectCard
-                                                    key={index}
-                                                    {...project}
-                                                    />
-                                                )
-                                            })
-                                        }
-                                    </Row>
-                                
-                                    
                                     <br></br>
                                     <br></br>
                                     <h2>Facial Recognition Application</h2>
                                     <h6><span>Uses: </span>Python and OpenCV</h6>
                                     <br></br>
-                                    <p>This application uses a webcam or any other camera that is connected to the device to detect a face by matching the face markers with a preset and marks a face with a blue rectangle around it.</p>
-                                    <p>Apart from that, the application uses a model, that has been trained using some pre-loaded photos, to match a face detected by the application with some data specific to a face.</p>
-                                    <p> In other words, it recognises a face and displays particular information matching with the face.</p>
+                                    <p>This application uses a webcam to detect a face and matches it to a label. </p>
+                                    <p> It is a robust facial feature detection system developed by training a classifier using a Haar-like cascade algorithm.
+                                        The uses feature vector classification and face recognition on detected faces from video frames using the
+                                        FaceNet deep learning model.</p>
+                                    <Row>
+                                        <Col></Col>
+                                        <Col><h4><a href="https://github.com/RiteshwarBrar/Facial-Recognition"  target="_blank" rel="noreferrer" style={{ textDecoration:"none", color: "#3c9442", padding: "6px 12px",
+  border: "2px solid #3c9442", "background-color": "#dfffdf"}}>GitHub</a></h4></Col>
+                                        <Col></Col>
+                                    </Row>
+                                    <br></br>
                                     <Row>
                                         {
                                             project2.map((project, index) => {
@@ -158,10 +176,19 @@ export const Projects = () => {
                                     
                                     <br></br>
                                     <br></br>
-                                    <h2>Balance Sheet App</h2>
-                                    <h6><span>Uses: </span>and OpenCV</h6>
+                                    <h2>Custom Shell</h2>
+                                    <h6><span>Uses: </span>C in Linux environment</h6>
                                     <br></br>
-                                    <p>This app provides a solution to a realtime problem prevelant among the farmers in my hometown. The system of lending out money and paying the farm workers in daily wages requires the farm owners to keep track of the money they owe and the money they are owed.</p>
+                                    <p>Custom UNIX Shell also known as a command line interpretor (CLI) that takes commands and in turn creates, destroys and manages processes accordingly.
+                                        The processes can be run in both background and foreground depending on the input command. This shell also facilitates piping of commands.</p>
+                                        <Row>
+                                        <Col></Col>
+                                        <Col><h4><a href="https://github.com/RiteshwarBrar/CS537-Introduction-to-Operating-Systems/tree/main/p3-main"  target="_blank" rel="noreferrer" style={{ textDecoration:"none", color: "#3c9442", padding: "6px 12px",
+  border: "2px solid #3c9442", "background-color": "#dfffdf"}}>GitHub</a></h4></Col>
+                                        <Col></Col>
+                                    </Row>
+                                    
+                                    <br></br>
                                     <Row>
                                         {
                                             project3.map((project, index) => {
@@ -174,6 +201,104 @@ export const Projects = () => {
                                             })
                                         }
                                     </Row>
+                                    <br></br>
+                                    <br></br>
+                                    <h2>Badger Buddies</h2>
+                                    <h6><span>Uses: </span>JavaScript with React.js</h6>
+                                    <br></br>
+                                    <p>Badger Buddies is a web application that allows users to adopt cats online by choosing from the available cats.
+                                         You can save cats for later or click on 'Show More' button to get details about the cat like age, gender and breed.
+                                         The data for this application comes from <a href="https://www.madisoncatproject.org/" target="_blank" rel="noreferrer">The Madison Cat Project</a>.</p>
+                                    
+                                    <Row>
+                                        <Col></Col>
+                                        <Col><h4><a href="https://github.com/RiteshwarBrar/Badger-Buddies"  target="_blank" rel="noreferrer" style={{ textDecoration:"none", color: "#3c9442", padding: "6px 12px",
+  border: "2px solid #3c9442", "background-color": "#dfffdf"}}>GitHub</a></h4></Col>
+                                        <Col></Col>
+                                    </Row>
+                                    <br></br>
+                                    <Row>
+
+                                        {
+                                            project6.map((project, index) => {
+                                                return (
+                                                    <ProjectCard
+                                                    key={index}
+                                                    {...project}
+                                                    />
+                                                )
+                                            })
+                                        }
+                                    </Row>
+                                    <br></br>
+                                    <br></br>
+                                    <h2>Badger Chatroom</h2>
+                                    <h6><span>Uses: </span>Javascript with React Native</h6>
+                                    <br></br>
+                                    <p>Badger Chatroom is a mobile application that consists of multiple chatrooms where users can create posts if they are signed in.
+                                         A signed in user can also delete their own posts if they feel like and sign out to simply view posts without the access to create or delete.</p>
+                                    
+                                    <Row>
+                                        <Col></Col>
+                                        <Col><h4><a href="https://github.com/RiteshwarBrar/Badger-Chat-Mobile"  target="_blank" rel="noreferrer" style={{ textDecoration:"none", color: "#3c9442", padding: "6px 12px",
+  border: "2px solid #3c9442", "background-color": "#dfffdf"}}>GitHub</a></h4></Col>
+                                        <Col></Col>
+                                    </Row>
+                                    <br></br>
+                                    <Row>
+                                        {
+                                            project5.map((project, index) => {
+                                                return (
+                                                    <ProjectCard
+                                                    key={index}
+                                                    {...project}
+                                                    />
+                                                )
+                                            })
+                                        }
+                                    </Row>
+                                    
+                                    <br></br>
+                                    <br></br>
+                                    <h2>Online Art Store</h2>
+                                    <h6><span>Uses: </span>HTML, CSS, JavaScript, React.js, Node.js and MongoDB</h6>
+                                    <br></br>
+                                    <p>This is an ongoing project that will allow a client to post their paintings online for sale. This web application will be user-friendly to such an extent that to remove and add inventory the client would not need to have prior knowledge of databases.
+                                         Users will be able to buy paintings and through continuous development features like wishlists will also be added.</p>
+                                    <p>Moreover, with only a few changes the application can be changed to sell other goods or can serve as a blueprint for more online stores to be used by other brands.</p>
+                                    <br></br>
+                                    <Row>
+                                        {
+                                            project1.map((project, index) => {
+                                                return (
+                                                    <ProjectCard
+                                                    key={index}
+                                                    {...project}
+                                                    />
+                                                )
+                                            })
+                                        }
+                                    </Row>
+                                
+                                    
+                                    {/* <br></br>
+                                    <br></br>
+                                    <h2>Balance Sheet App</h2>
+                                    <h6><span>Uses: </span>and OpenCV</h6>
+                                    <br></br>
+                                    <p>This app provides a solution to a realtime problem prevelant among the farmers in my hometown. The system of lending out money and paying the farm workers in daily wages requires the farm owners to keep track of the money they owe and the money they are owed.</p>
+                                    <Row>
+                                        {
+                                            project1.map((project, index) => {
+                                                return (
+                                                    <ProjectCard
+                                                    key={index}
+                                                    {...project}
+                                                    />
+                                                )
+                                            })
+                                        }
+                                    </Row> */}
                         
                     </Col>
                 </Row>

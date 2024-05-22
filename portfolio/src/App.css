@@ -441,7 +441,7 @@ border-right: 0.08em solid #666;
 
 .proj-imgbx {
   position: relative;
-  border-radius: 30px;
+  border-radius: 45px;
   overflow: hidden;
   margin-bottom: 24px;
 }
@@ -472,14 +472,14 @@ border-right: 0.08em solid #666;
   opacity: 1;
 }
 .proj-txtx h4 {
-  color:#6fe06f;
+  color:#ecffec;
   font-size: 30px;
   font-weight: 300;
   letter-spacing: 0.8px;
   line-height: 1.1em;
 }
 .proj-txtx span {
-  color:#6fe06f;
+  color:#b6d6b6;
   font-style: italic;
   font-weight: 300;
   font-size: 15px;
