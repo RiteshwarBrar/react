@@ -19,10 +19,10 @@ export const Banner = () => {
                             <span className="tagline">Welcome to my Portfolio</span>
                             <br></br>
                             <h1>Riteshwar Singh Brar</h1>
-                            <h2>Full-Stack Developer</h2>
+                            <h2>Developer</h2>
                             <p>
-                            I like to create solutions to ongoing problems with my innovation and technical accumen.
-                            I am good at problem solving as I like to break each one down to smaller bits which helps me find a solution that seems out of the box initially.</p>
+                            I enjoy creating solutions to ongoing problems with my innovation and technical acumen.
+                            I have a knack for problem solving and I do so by breaking each one down to smaller bits. This helps me find a solution that seems initially out of the box.</p>
                             
                             <p> Here is a quote that resonates with me:</p>
                             <p>

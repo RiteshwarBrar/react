@@ -111,9 +111,9 @@ export const Projects = () => {
                                     <h2>Pill Pal</h2>
                                     <h6><span>Uses: </span>HTML, CSS, JavaScript, Twilio, MongoDB and Node.js</h6>
                                     <br></br>
-                                    <p>Pill Pal was a project made by me and three other students during MadHacks 2023.<br></br>
+                                    <p>Pill Pal was a project made by three other students and I during MadHacks 2023.<br></br>
                                         The inspiration for this app arose from the ongoing issue of people forgetting to take their medication due to age or other medical issues.
-                                        Pill Pal is a web application that allows users to set reminders for their medication and helps them to keep track of their medication intake.
+                                        Pill Pal is a web application that allows users to set reminders for their medication and helps them keep track of their medication intake.
                                         The app can also send real-time text messages to the user's phone as a reminder for them to take their medication. 
                                     </p>
                                     
@@ -150,9 +150,9 @@ export const Projects = () => {
                                     <h2>Facial Recognition Application</h2>
                                     <h6><span>Uses: </span>Python and OpenCV</h6>
                                     <br></br>
-                                    <p>This application uses a webcam to detect a face and matches it to a label. </p>
+                                    <p>This application uses a webcam to detect a face and helps to match it to a label. </p>
                                     <p> It is a robust facial feature detection system developed by training a classifier using a Haar-like cascade algorithm.
-                                        The uses feature vector classification and face recognition on detected faces from video frames using the
+                                        It uses feature vector classification and face recognition on detected faces from video frames using the
                                         FaceNet deep learning model.</p>
                                     <Row>
                                         <Col></Col>
@@ -179,8 +179,8 @@ export const Projects = () => {
                                     <h2>Custom Shell</h2>
                                     <h6><span>Uses: </span>C in Linux environment</h6>
                                     <br></br>
-                                    <p>Custom UNIX Shell also known as a command line interpretor (CLI) that takes commands and in turn creates, destroys and manages processes accordingly.
-                                        The processes can be run in both background and foreground depending on the input command. This shell also facilitates piping of commands.</p>
+                                    <p>Custom UNIX Shell, also known as a command line interpretor (CLI), takes commands to create, destroy and manage processes accordingly.
+                                        The processes can be run in both the background and the foreground, depending on the input command. This shell also facilitates piping of commands.</p>
                                         <Row>
                                         <Col></Col>
                                         <Col><h4><a href="https://github.com/RiteshwarBrar/CS537-Introduction-to-Operating-Systems/tree/main/p3-main"  target="_blank" rel="noreferrer" style={{ textDecoration:"none", color: "#3c9442", padding: "6px 12px",
@@ -207,8 +207,8 @@ export const Projects = () => {
                                     <h6><span>Uses: </span>JavaScript with React.js</h6>
                                     <br></br>
                                     <p>Badger Buddies is a web application that allows users to adopt cats online by choosing from the available cats.
-                                         You can save cats for later or click on 'Show More' button to get details about the cat like age, gender and breed.
-                                         The data for this application comes from <a href="https://www.madisoncatproject.org/" target="_blank" rel="noreferrer">The Madison Cat Project</a>.</p>
+                                         You can save cats for later or click on the 'Show More' button to get details about a particular cat such as age, gender, and breed.
+                                         The data for this application comes from the <a href="https://www.madisoncatproject.org/" target="_blank" rel="noreferrer">Madison Cat Project</a>.</p>
                                     
                                     <Row>
                                         <Col></Col>
@@ -236,7 +236,7 @@ export const Projects = () => {
                                     <h6><span>Uses: </span>Javascript with React Native</h6>
                                     <br></br>
                                     <p>Badger Chatroom is a mobile application that consists of multiple chatrooms where users can create posts if they are signed in.
-                                         A signed in user can also delete their own posts if they feel like and sign out to simply view posts without the access to create or delete.</p>
+                                         A signed in user can also delete their own posts and sign out to simply view posts without access to create or delete them.</p>
                                     
                                     <Row>
                                         <Col></Col>
@@ -263,9 +263,9 @@ export const Projects = () => {
                                     <h2>Online Art Store</h2>
                                     <h6><span>Uses: </span>HTML, CSS, JavaScript, React.js, Node.js and MongoDB</h6>
                                     <br></br>
-                                    <p>This is an ongoing project that will allow a client to post their paintings online for sale. This web application will be user-friendly to such an extent that to remove and add inventory the client would not need to have prior knowledge of databases.
-                                         Users will be able to buy paintings and through continuous development features like wishlists will also be added.</p>
-                                    <p>Moreover, with only a few changes the application can be changed to sell other goods or can serve as a blueprint for more online stores to be used by other brands.</p>
+                                    <p>This is an ongoing project that will allow a client to post their paintings online for sale. This web application will be user-friendly to such an extent that to remove and add inventory, the client will not need to have prior knowledge of databases.
+                                        Users will be able to buy paintings and via continuous development features like wishlists will also be added.</p>
+                                    <p>Moreover, with only a few changes, the application can be changed to sell other goods or can serve as a blueprint for more online stores to be used by other brands.</p>
                                     <br></br>
                                     <Row>
                                         {
