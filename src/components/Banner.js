@@ -22,7 +22,7 @@ export const Banner = () => {
                             <h2>Developer</h2>
                             <p>
                             I enjoy creating solutions to ongoing problems with my innovation and technical acumen.
-                            I have a knack for problem solving and I do so by breaking each one down to smaller bits. This helps me find a solution that seems initially out of the box.</p>
+                            I have a knack for problem solving and I do so by breaking each one down to smaller bits. This helps me find a solution that initially seems out of the box.</p>
                             
                             <p> Here is a quote that resonates with me:</p>
                             <p>
