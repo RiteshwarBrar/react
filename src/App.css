@@ -234,7 +234,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: #3c9442;
   font-size: 35px;
   margin-bottom: 26px;
-  margin-top: 8.5px;
+  margin-top: 17.5px;
   display: inline-block;
 }
 .banner h1 {
@@ -274,7 +274,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 20px;
   margin-right: 20px;
   width: 96%;
+  
 }
+.banner .credit {
+    margin-bottom: 40px;
+}
+  
+
 .banner button {
   color: #000000;
   font-weight: 300;
@@ -285,6 +291,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner img {
+  
   margin-left: auto;
   margin-right: auto;
   
