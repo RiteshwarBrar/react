@@ -14,9 +14,29 @@ import pill1 from "../assets/img/pill1.png";
 import pill2 from "../assets/img/twill.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import Carousel from "react-multi-carousel";
 
 
 export const Projects = () => {
+    const responsive = {
+        superLargeDesktop: {
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 1
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 1
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 1
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1
+        }
+    };
     const project1 = [
         {
             title: "Work in progress",
@@ -106,8 +126,9 @@ export const Projects = () => {
                         <h1>Projects</h1>
                         </div>}
                     </TrackVisibility>
-                                    <br></br>
-                                    <br></br>
+                    <Carousel responsive={responsive} infinite={true} className="project-slider">
+                            <div className="project-item" >
+                                    
                                     <h2>Pill Pal</h2>
                                     <h6><span>Uses: </span>HTML, CSS, JavaScript, Twilio, MongoDB and Node.js</h6>
                                     <br></br>
@@ -145,8 +166,9 @@ export const Projects = () => {
                                             })
                                         }
                                     </Row>
-                                    <br></br>
-                                    <br></br>
+                                </div>
+                                <div className="project-item" >
+                                    
                                     <h2>Facial Recognition Application</h2>
                                     <h6><span>Uses: </span>Python and OpenCV</h6>
                                     <br></br>
@@ -173,9 +195,9 @@ export const Projects = () => {
                                             })
                                         }
                                     </Row>
+                                </div>    
+                                <div className="project-item" >
                                     
-                                    <br></br>
-                                    <br></br>
                                     <h2>Custom Shell</h2>
                                     <h6><span>Uses: </span>C in Linux environment</h6>
                                     <br></br>
@@ -201,8 +223,9 @@ export const Projects = () => {
                                             })
                                         }
                                     </Row>
-                                    <br></br>
-                                    <br></br>
+                                </div>
+                                <div className="project-item" >
+                                    
                                     <h2>Badger Buddies</h2>
                                     <h6><span>Uses: </span>JavaScript with React.js</h6>
                                     <br></br>
@@ -230,8 +253,9 @@ export const Projects = () => {
                                             })
                                         }
                                     </Row>
-                                    <br></br>
-                                    <br></br>
+                                </div>
+                                <div className="project-item" >   
+                                    
                                     <h2>Badger Chatroom</h2>
                                     <h6><span>Uses: </span>Javascript with React Native</h6>
                                     <br></br>
@@ -257,9 +281,9 @@ export const Projects = () => {
                                             })
                                         }
                                     </Row>
+                               </div>
+                                <div className="project-item" >       
                                     
-                                    <br></br>
-                                    <br></br>
                                     <h2>Online Art Store</h2>
                                     <h6><span>Uses: </span>HTML, CSS, JavaScript, React.js, Node.js and MongoDB</h6>
                                     <br></br>
@@ -279,7 +303,7 @@ export const Projects = () => {
                                             })
                                         }
                                     </Row>
-                                
+                                </div>
                                     
                                     {/* <br></br>
                                     <br></br>
@@ -299,7 +323,7 @@ export const Projects = () => {
                                             })
                                         }
                                     </Row> */}
-                        
+                        </Carousel>
                     </Col>
                 </Row>
             </Container>
